@@ -7,5 +7,6 @@ export const endpoints = {
   companionList: host + companions + '/list',
   companionUpdate: host + companions + '/update',
   companionDelete: host + companions + '/delete',
+  companionModel: host + companions + '/model-companion',
 
 }

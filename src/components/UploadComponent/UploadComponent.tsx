@@ -4,7 +4,6 @@ import { useCallback, useState } from 'react'
 import { Button, Input, Upload, UploadBody, UploadFooter, UploadIcon, UploadText } from 'keep-react'
 import { endpoints } from '../../utils/endpoints/endpoints'
 import axios from 'axios';
-import example_code from './example-format-model.json';
 
 export const UploadComponent = () => {
   const [info, setInfo] = useState({
@@ -39,6 +38,7 @@ export const UploadComponent = () => {
 
   return (
     <>
+
       <div className='flex'>
         <div className='w-2/4 gap-y-5'>
           <Input
@@ -107,15 +107,7 @@ export const UploadComponent = () => {
             Upload model
           </Button>
         </div>
-        <div className='w-2/4 mx-2'>
-          <p className='my-2 p-2 font-bold rounded'>
-            The "ModelName.model3.json"
-            file needs to have this format :
-          </p>
-          <pre
-            className='bg-white rounded shadow-md p-2 h-[500px] overflow-scroll'
-          > {JSON.stringify(example_code, null, 2)} </pre>
-        </div>
+
       </div>
     </>
   )

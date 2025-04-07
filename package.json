@@ -12,6 +12,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.9",
+    "jszip": "^3.10.1",
     "keep-react": "^1.6.1",
     "phosphor-react": "^1.4.1",
     "postcss": "^8.5.1",
